@@ -4,11 +4,6 @@
             [compojure.handler  :refer [site               ]]
             [compojure.route    :refer [resources not-found]] ) )
 
-;(defn app [req]
-;  {:status 200
-;   :headers {"Content-Type" "text/plain"}
-;   :body "Hello, world"} )
-
 (defroutes hello-routes
            (GET "/" [] "<p>hi from compojure</p>")
            (resources "/")
